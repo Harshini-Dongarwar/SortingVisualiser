@@ -1,0 +1,105 @@
+
+body{
+    background-color:black;
+}
+.container {
+    max-width: 100%;
+    padding: 0 20px; 
+    box-sizing: border-box; 
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+
+.controls {
+    margin-bottom: 30px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.controls label {
+    display: block;
+    margin-bottom: 10px;
+    color:white; 
+    font-weight: bold; 
+
+}
+
+
+label[for="arraySize"] {
+    margin-right: 20px; 
+}
+
+label[for="sortingSpeed"] {
+    margin-left: 20px; 
+}
+
+
+.array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 200px; 
+    margin-bottom: 30px; 
+    overflow-x: auto; 
+}
+
+.array-bar {
+    position: relative;
+    width: 30px; 
+    margin: 0 2px; 
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+
+.array-bar span {
+    position: absolute;
+    bottom: 5px; 
+    width: 100%;
+    text-align: center;
+    color: black; 
+    font-size: 12px; 
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-container button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-container button:hover {
+    background-color: #005F6B;
+}
+
+
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .array-container {
+        overflow-x: auto; 
+    }
+
+    label[for="arraySize"], label[for="sortingSpeed"] {
+        margin: 10px 0; 
+    }
+}
